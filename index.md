@@ -16,26 +16,17 @@ To create a SSH config file, I click on **Finder**, choose **Go** on the top lef
 
 
 To streamline ssh configuration, I add the given lines in lab
-
 ```
 Host ieng6
     HostName ieng6.ucsd.edu
     User cs15lwi22zzz (use your username)
 ```
-
-
-
 Then, modifying the lines by changing the nickname and username
 ```
 Host cs15l (the nickname given by me)
     HostName ieng6.ucsd.edu
     User cs15lwi22aes (my username)
 ```
-
-
-
-
-
 **Part 2. Working with ssh After Streamlining it**
 
 ![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-02-11%20at%206.27.02%20PM.png)
