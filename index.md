@@ -1,37 +1,56 @@
-##x Welcome to GitHub Pages
+# Lab Report 3:  
 
-You can use the [editor on GitHub](https://github.com/KristinShuyiHan/Lab-Report-3-pages/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+written by Shuyi Han(PID: A16470709) on Feb 11th 2022
+ 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Streamlining ssh Configuration
 
-### Markdown
+"SSH, like many programs, has configuration files that can save you some typing" -- CSE15L Week 5
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Part 1. Creating a SSH Config File and Editing on it**
 
-```markdown
-Syntax highlighted code block
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-02-11%20at%206.12.29%20PM.png)
+To create a SSH config file, I click on **Finder**, choose **Go** on the top left of the screen, then click on **Go to Folder**, then type in "**~/.ssh/**". The
+**.ssh** folder contains the **private key (in a file id_rsa)** and the **public key (in a file id_rsa.pub)**, and a file called **known_hosts** stored in the .ssh directory on my computer. I create a file called **config** by using **TextEdit** application in Mac. 
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+To streamline ssh configuration, I add the given lines in lab
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+Host ieng6
+    HostName ieng6.ucsd.edu
+    User cs15lwi22zzz (use your username)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KristinShuyiHan/Lab-Report-3-pages/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Then, modifying the lines by changing the nickname and username
+```
+Host cs15l (the nickname given by me)
+    HostName ieng6.ucsd.edu
+    User cs15lwi22aes (my username)
+```
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+
+**Part 2. Working with ssh After Streamlining it**
+
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-02-11%20at%206.27.02%20PM.png)
+After streamlining my ssh, I am able to use the alias that I created in the previous step to log me into my server account without specify my actual account name
+
+
+
+
+
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-02-11%20at%206.14.02%20PM.png)
+I use "**ls**" to see what files are in my account
+
+
+
+To copy a file to my account using just the alias I chose, I choose **"MarkdownParse.java"**, and type "**scp MarkdownParse.java cs15l:~/**" 
+![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-02-11%20at%206.27.02%20PM.png)
+It works because after the command, my server account contains one more file called **"MarkdownParse.java"**
+
