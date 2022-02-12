@@ -15,6 +15,8 @@ To create a SSH config file, I click on **Finder**, choose **Go** on the top lef
 
 
 
+
+
 To streamline ssh configuration, I add the given lines in lab
 ```
 Host ieng6
