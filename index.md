@@ -9,7 +9,7 @@ written by Shuyi Han(PID: A16470709) on Feb 11th 2022
 
 **Part 1. Creating a SSH Config File and Editing on it**
 
-![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-02-11%20at%206.12.29%20PM.png)
+![Image](Screen%20Shot%202022-02-11%20at%206.12.29%20PM.png)
 To create a SSH config file, I click on **Finder**, choose **Go** on the top left of the screen, then click on **Go to Folder**, then type in "**~/.ssh/**". The
 **.ssh** folder contains the **private key (in a file id_rsa)** and the **public key (in a file id_rsa.pub)**, and a file called **known_hosts** stored in the .ssh directory on my computer. I create a file called **config** by using **TextEdit** application in Mac. 
 
