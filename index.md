@@ -31,7 +31,7 @@ Host cs15l (the nickname given by me)
 ```
 **Part 2. Working with ssh After Streamlining it**
 
-![Image](https://github.com/KristinShuyiHan/cse15l-lab-reports/blob/main/Screen%20Shot%202022-02-11%20at%206.27.02%20PM.png)
+![Image](Screen%20Shot%202022-02-11%20at%206.27.02%20PM.png)
 After streamlining my ssh, I am able to use the alias that I created in the previous step to log me into my server account without specify my actual account name
 
 
